@@ -1,111 +1,81 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka+One&display=swap');
-
-* {
-    border: 1px solid red;
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-/* shrink images for placement */
-img {
-    width: 100px;
+
+header, footer {
+    width: 100vw;
 }
 
-/*********************************
-* General
-*********************************/
-
-body {
-    background-color: snow;
-    color: slategrey;
-    margin: 20px 0;
-    font-family: 'Baloo 2', cursive;
-    text-align: center;
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+header div:nth-child(2) {
+    display: flex;
+    align-items: center;
 }
 
-h2 {
-    font-size: 1em;
+aside {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside ul {
+    padding-left: 0;
+}
+
+aside ul li {
+    margin: 1em 0;
+    list-style: none;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hero-img img {
+    width: 100%;
+}
+
+.sub-hero-img {
+    display: flex;
     
 }
 
-h1 {
-    font-family: 'Fredoka One', cursive;
-}
-
- header {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }                  
-  header div {
-    display: flex;
-    flex-wrap: wrap;
+.sub-hero-img img {
     width: 50%;
-    margin-bottom: 20px;
-}                                  
-header h1 {
-    text-align: left;
-}
-header div:last-child {
-    display: flex;
-    align-items: center;
-}                          
-
-/*********************************
- * Container
- *********************************/
- .container {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-between;
-  }
- /*********************************
- * Aside/Nav
- *********************************/ 
-aside {
-    flex-basis: 15%;
-    min-width: 15%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-ul {
-    padding: 0;
-}
-li {
-    list-style: none;
-    text-align: left;
 }
 
-
-/*********************************
- * Main
- *********************************/
- main {
-    width: 85%;
-    flex-basis: 85%;
-   }                  
-  
-   div[class$='row']  {
+.articles {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1em;
-  }
- .top-row img {
+}
+
+.articles div {
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.articles div img {
     width: 100%;
- }
- .middle-row img {
-   width: 49%;
- }
- .bottom-row img {
-   width: 32%;
- }                                  
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+                                
 
             
